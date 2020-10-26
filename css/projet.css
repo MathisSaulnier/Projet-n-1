@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 4fr 2fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "logo titre titre"
+    "ref ref ref"
+    "att att att"
+    "salarié salarié salarié"
+    "info info info"
+    "demande demande demande"
+    "annuler annuler annuler"
+    "contact contact contact";
+}
+.container * {
+    display: flex;
+}
+.logo {
+    justify-content: center;
+    align-items: center;
+    grid-area: logo;
+    background: chocolate;
+}
+.titre {
+    justify-content: center;
+    align-items: center;
+    grid-area: titre;
+    background: chocolate;
+    color: white;
+}
+.ref {
+    display: flex;
+    grid-area: ref;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: chocolate;
+}
+.vr {
+    display: flex;
+    justify-content: none;
+    align-items: none;
+}
+.rs {
+    display: flex;
+    justify-content: space-around;
+}
+.tfm {
+    display: flex;
+    justify-content: space-around;
+}
+.att {
+    color: chocolate;
+    text-decoration: underline;
+    grid-area: att;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.salarié {
+    display: flex;
+    grid-area: salarié;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background: chocolate;
+    color: whitesmoke;
+}
+.info {
+    display: flex;
+    grid-area: info;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: chocolate;
+}
+.demande {
+    display: flex;
+    grid-area: demande;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background: chocolate;
+    color: whitesmoke;
+}
+.annuler {
+    display: flex;
+    grid-area: annuler;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: chocolate;
+}
+.contact {
+    display: flex;
+    grid-area: contact;
+    justify-content: center;
+    align-content: center;
+    background: chocolate;
+    color: whitesmoke;
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santraplus</title>
+    <link rel="stylesheet" href="css/projet.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="logo_santraplus.png">
+        </div>
+        <div class="titre">
+            <h1>Formulaire à adresser par courrier, fax ou e-mail : planning@santraplus.fr</h1><h2>Planning Santra Plus</h2><p>- CS 20874 - 76087 Le Havre CEDEX - Fax : 02 32 74 51 20</p> 
+        </div>
+        <div class="ref">
+            <div class="vr">
+                <h3>Vos références</h3>
+            </div>
+            <div class="rs">
+                <p>Raison sociale</p>
+                <label for="nd">N°d'adhérent :</label>
+                <input type="text" id="nd" name="n_d"></div>
+                <div class="ndd">
+               <label for="ndd">Nom du demandeur :</label>
+               <input type="text" id="ndd" name="n_d_d">
+            </div>
+            <div class="tfm">
+                <label for="tel">Tél :</label>
+                <input type="text" id="tel" name="tel_tel">
+                <label for="fax">Fax :</label>
+                <input type="text" id="fax" name="fax_fax">
+                <label for="email">Mail :</label>
+                <input type="email" id="email" name="user_mail"> 
+            </div>
+        </div>
+        <div class="att">
+            <h1>Attention ! Toute demande incomplète ne sera pas prise en compte</h1>
+        </div>
+        <div class="salarié">
+            <h3>Le salarié</h3>
+            <p>Civilité :</p>
+            <div class="monsieur">
+                <label for="monsieur">Monsieur</label>
+            <input type="checkbox" id="monsieur" name="monsieur">
+            </div>
+            <div class="madame">
+                <label for="madame">Madame</label>
+            <input type="checkbox" id="madame" name="madame">
+            </div>
+            <div class="nom">
+                <label for="nom">Nom de naissance :</label>
+            <input type="text" id="nom" name="nom">
+            </div>
+            <div class="marital">
+                <label for="marital">Nom marital :</label>
+            <input type="text" id="marital" name="marital">
+            </div>
+            <div class="ddn">
+                <label for="ddn">Date de naissance :</label>
+            <input type="text" id="ddn" name="ddn">
+            </div>
+            <div class="pdt">
+                <label for="pdt">Poste de travail :</label>
+            <input type="text" id="pdt" name="pdt">
+            </div>
+            <div class="code">
+                <label for="code">Code PCS :</label>
+            <input type="text" id="code" name="code">
+            </div>
+        </div>
+        <div class="info">
+            <h3>Informations complémentaires pour création nouveau salarié</h3>
+            <label for="date">Date d'embauche :</label>
+            <input type="text" id="date" name="date">
+            <label for="contrat">Type de contrat (CDD, CDI, apprenti...) :</label>
+            <input type="text" id="contrat" name="contrat">
+            <label for="cdd">Pour les CDD, date de fin de contrat :</label>
+            <input type="text" id="cdd" name="cdd">
+            <p>Le salarié a occupé un emploi identique présentant les mêmes risques d'exposition pour votre entreprise ou pour une autre entreprise :</p>
+            <label for="oui">Oui</label>
+            <input type="checkbox" id="oui" name="oui">
+            <label for="non">non</label>
+            <input type="checkbox" id="non" name="non">
+            <p><h3>Catégorie suivant les surveillances :</h3> Cocher la ou les correspondantes.</p>
+            <h3>Suivi Individuel Simple(SI) :</h3>
+            <label for="cghrp">Cas général hors risque particulier</label>
+            <input type="checkbox" id="cghrp" name="cghrp">
+            <label for="ab2">Salarié exposé aux agents biologiques groupe 2 (AB2)</label>
+            <input type="checkbox" id="ab2" name="ab2">
+            <label for="moins-18">Moins de 18 ans non affecté à travaux réglementés.</label>
+            <input type="checkbox" id="moins-18" name="moins-18">
+            <label for="vle">Salarié exposé aux champs électromagnétiques si VLE dépassée.</label>
+            <input type="checkbox" id="vle" name="vle">
+            <h3>Suivi Individuel Adapté(SIA) :</h3>
+            <label for="travail-nuit">Travailleur de nuit</label>
+            <input type="checkbox" id="travail-nuit" name="travail-nuit">
+            <label for="travail-h">Travailleur handicapé</label>
+            <input type="checkbox" id="travail-h" name="travail-h">
+            <label for="titulaire">Travailleur titulaire d'une pension d'invalidité</label>
+            <input type="checkbox" id="titulaire" name="titulaire">
+            <label for="femme-enceinte">Femme enceinte, allaitante ou venant d'accoucher</label>
+            <input type="checkbox" id="femme-enceinte" name="femme-enceinte">
+            <h3>Suivi Individuel Renforcé(SIR) :</h3>
+            <label for="amiante">Salarié exposé à l'amiante</label>
+            <input type="checkbox" id="amiante" name="amiante">
+            <label for="plomb">Salarié exposé au plomb</label>
+            <input type="checkbox" id="plomb" name="plomb">
+            <label for="abp3">Salarié exposé aux agents biologiques gp 3 et 4 (ABP3 et 4)</label>
+            <input type="checkbox" id="abp3" name="abp3">
+            <label for="hyperbare">Salarié exposé au risque Hyperbare</label>
+            <input type="checkbox" id="hyperbare" name="hyperbare">
+            <label for="catb">Salarié exposé aux rayonnements ionisants Cat B</label>
+            <input type="checkbox" id="catb" name="catb">
+            <label for="chute">Salarié exposé au risque de chute de hauteur lors du montage et démontage d'échafaudage</label>
+            <input type="checkbox" id="chute" name="chute">
+            <label for="conduite">Autorisation de conduite</label>
+            <input type="checkbox" id="conduite" name="conduite">
+            <label for="habilitation">Habilitation électrique (travaux sur installations électriques)</label>
+            <input type="checkbox" id="habilitation" name="habilitation">
+            <label for="manutention">Manutention manuelle, port de charge >55kg (R4541-9)</label>
+            <input type="checkbox" id="manutention" name="manutention">
+            <label for="cmr">Salarié exposé à CMR</label>
+            <input type="checkbox" id="cmr" name="cmr">
+            <h3>Suivi Individuel Renforcé Annuel(SIRA) :</h3>
+            <label for="cata">Rayonnements ionisants Cat A</label>
+            <input type="checkbox" id="cata" name="cata">
+            <label for="regle">Moins de 18 ans affecté à travaux réglementés.</label>
+            <input type="checkbox" id="regle" name="regle">
+        </div>
+        <div class="demande">
+            <h3>Demande de rendez-vous :</h3>
+            <label for="reprise">Reprise après un congé de maternité</label>
+            <input type="checkbox" id="reprise" name="reprise">
+            <label for="reprise">Date de la reprise :</label>
+            <input type="text" id="reprise" name="reprise">
+            <label for="duree-arret">Durée de l'arrêt :</label>
+            <input type="text" id="duree-arret" name="duree-arret">
+            <label for="maladie">Reprise après une absence pour cause de maladie professionnelle</label>
+            <input type="checkbox" id="maladie" name="maladie">
+            <label for="reprise">Date de la reprise :</label>
+            <input type="text" id="reprise" name="reprise">
+            <label for="duree-arret">Durée de l'arrêt :</label>
+            <input type="text" id="duree-arret" name="duree-arret">
+            <label for="absence">Reprise après une absence de + 30 jours suite :</label>
+            <input type="checkbox" id="absence" name="absence">
+           <label for="accident">accident de travail</label>
+            <input type="button" id="accident" name="accident">
+            <label for="arret">arrêt maladie</label>
+            <input type="button" id="arret" name="arret">
+            <label for="reprise">Date de la reprise :</label>
+            <input type="text" id="reprise" name="reprise">
+            <label for="duree-arret">Durée de l'arrêt :</label>
+            <input type="text" id="duree-arret" name="duree-arret">
+            <label for="examen">Examen à la demande de l'employeur (merci de préciser le motif) :</label>
+            <input type="checkbox" id="examen" name="examen">
+            <input type="text" id="examen" name="examen">
+        </div>
+        <div class="annuler">
+            <h3>Annuler ou reporter un rendez-vous :</h3>
+            <label for="rdv">Date du rendez-vous :</label>
+            <input type="text" id="rdv" name="rdv">
+            <label for="horaire">Horaire du rendez-vous :</label>
+            <input type="text" id="horaire" name="horaire">
+            <label for="medecin">Nom du médecin ou infirmière :</label>
+            <input type="text" id="medecin" name="medecin">
+            <p>Reporter le rendez-vous :</p>
+            <label for="dispo">Oui, disponibilités :</label>
+            <input type="checkbox" id="dispo" name="dispo">
+            <input type="text" id="dispo" name="dispo">
+            <label for="motif">Non, motif :</label>
+            <input type="checkbox" id="motif" name="motif">
+            <input type="text" id="motif" name="motif">
+        </div>
+        <div class="contact">
+            <p>
+                Siège social : SANTRA PLUS / CS 20874 / 76087 Le Havre cedex / <a href="www.santraplus.fr">www.santraplus.fr</a> / SIRET 781 061 106 000 48 / APE 8621Z
+            </p>
+        </div>
+    </div>
+</body>
+</html>
